@@ -24,7 +24,7 @@ public class ArquivosController implements IArquivosController{
 			while (linha != null) { //procurando EOF
 				if (linha.contains("fruit")) { //pego somente as linhas de frutas
 					String[] vetFruits = linha.split(","); //separo as informações de acordo com as vírgulas
-					System.out.println(vetFruits[0] + "\t" + vetFruits[1]+ "\t" + vetFruits[3] + "\t");
+					System.out.println(vetFruits[0] + "     \t" + vetFruits[1]+ "     \t" + vetFruits[3] + "     \t");
 				}
 				linha = buffer.readLine();
 			}
